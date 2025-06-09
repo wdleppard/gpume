@@ -13,3 +13,4 @@ tqdm
 psutil
 nvidia-ml-py3
 gputil
+aiofiles
