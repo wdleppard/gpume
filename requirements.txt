@@ -1,0 +1,15 @@
+fastapi
+uvicorn
+jinja2
+torch
+transformers
+opencv-python-headless
+pytesseract
+pdf2image
+pillow
+pandas
+numpy
+tqdm
+psutil
+nvidia-ml-py3
+gputil
