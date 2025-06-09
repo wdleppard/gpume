@@ -250,8 +250,6 @@ if __name__ == "__main__":
     # Generate report
     report = benchmark.generate_report(results)
     print(report)
-2.2 Production-Ready Benchmark Script
-[python]
 # production_benchmark.py
 import asyncio
 import aiofiles
@@ -369,4 +367,3 @@ async def main():
 
 if __name__ == "__main__":
     asyncio.run(main())
-__________________________________________________
