@@ -14,3 +14,17 @@ psutil
 nvidia-ml-py3
 gputil
 aiofiles
+prometheus_client
+
+typing
+logging
+asyncio
+benchmark_suite
+pathlib
+time
+dataclasses
+concurrent
+json
+sys
+cv2
+signal
