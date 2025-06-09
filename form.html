@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GPU Benchmarking Tool</title>
+</head>
+<body>
+    <h2>GPU Benchmarking Tool</h2>
+    <form method="post" action="/run">
+        <label>Workload Type:</label>
+        <select name="workload">
+            <option value="ocr">OCR</option>
+            <option value="nlp">NLP</option>
+            <option value="hybrid">Hybrid</option>
+        </select><br><br>
+        <label>Number of Documents:</label>
+        <input type="number" name="num_documents" value="1000"><br><br>
+        <label>Pages per Document:</label>
+        <input type="number" name="pages_per_doc" value="5"><br><br>
+        <label>Batch Size:</label>
+        <input type="number" name="batch_size" value="8"><br><br>
+        <label>Number of Workers:</label>
+        <input type="number" name="num_workers" value="4"><br><br>
+        <label>Use FP16:</label>
+        <input type="checkbox" name="use_fp16"><br><br>
+        <label>Use Multiprocessing:</label>
+        <input type="checkbox" name="use_multiprocessing"><br><br>
+        <input type="submit" value="Run Benchmark">
+    </form>
+    {% if result %}
+    <h3>Results:</h3>
+    <pre>{{ result }}</pre>
+    {% endif %}
+</body>
+</html>
